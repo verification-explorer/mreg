@@ -1,0 +1,581 @@
+xrun(64): 19.09-s006: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.09-s006: Started on Apr 13, 2021 at 15:30:21 IDT
+xrun
+	-clean
+	-access +rw
+	-uvmhome CDNS-1.2
+	-f file
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//design
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/register_model
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//design/hbus_types_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_if.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//design/hbus_rx.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/register_model/hbus_reg_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/sys_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/tb/top.sv
+	+UVM_VERBOSITY=UVM_MEDIUM
+	+UVM_TESTNAME=hbus_burst_seq_test
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_MEDIUM
+
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//design/hbus_types_pkg.sv
+	package worklib.hbus_types_pkg:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_if.sv
+	interface worklib.hbus_if:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//design/hbus_rx.sv
+	module worklib.hbus_rx:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/register_model/hbus_reg_pkg.sv
+	package worklib.hbus_reg_pkg:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_pkg.sv
+	package worklib.hbus_pkg:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/sys_pkg.sv
+        status.en_port[bit_to_change].predict(rw.value[0][0]);
+                                            |
+xmvlog: *W,FUNTSK (/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/env/status_reg_cb.svh,17|44): function called as a task without void'().
+        shadow.shadow.predict(rw.value[0][7:0]);
+                            |
+xmvlog: *W,FUNTSK (/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/env/shadow_reg_cb.svh,15|28): function called as a task without void'().
+        ctrl_p0.predict(8'hAA);
+                      |
+xmvlog: *W,FUNTSK (/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/tests/hbus_reg_api_test.svh,112|22): function called as a task without void'().
+	package worklib.sys_pkg:sv
+		errors: 0, warnings: 3
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/tb/top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//design given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		hbus_types_pkg
+		hbus_reg_pkg
+		hbus_pkg
+		sys_pkg
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.hbus_rx:sv <0x5300aaf5>
+			streams:  32, words: 12507
+		worklib.uvm_pkg:sv <0x00e84ae9>
+			streams:   6, words:  3451
+		worklib.uvm_pkg:sv <0x3acc0362>
+			streams:   6, words:  3111
+		worklib.uvm_pkg:sv <0x5aa5a436>
+			streams:   5, words:  2521
+		worklib.uvm_pkg:sv <0x61a3f2e3>
+			streams:  25, words: 18487
+		worklib.uvm_pkg:sv <0x5be67a63>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x5ed20bf7>
+			streams:  21, words: 50394
+		worklib.uvm_pkg:sv <0x1b6e2b5b>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x2e46adee>
+			streams:   7, words:  3090
+		worklib.uvm_pkg:sv <0x0d965cdd>
+			streams:  24, words: 20972
+		worklib.uvm_pkg:sv <0x61c9c178>
+			streams:  24, words: 20146
+		worklib.uvm_pkg:sv <0x01bc4539>
+			streams:  20, words: 19964
+		worklib.uvm_pkg:sv <0x3b296fbc>
+			streams:  11, words:  4453
+		worklib.uvm_pkg:sv <0x15e2444e>
+			streams:  23, words: 31066
+		worklib.uvm_pkg:sv <0x5b7785ac>
+			streams:  12, words: 15548
+		worklib.uvm_pkg:sv <0x45e1dd6e>
+			streams:  23, words: 25382
+		worklib.uvm_pkg:sv <0x1c3a213f>
+			streams:  22, words: 50402
+		worklib.uvm_pkg:sv <0x230a20f0>
+			streams:  25, words: 38796
+		worklib.uvm_pkg:sv <0x17788404>
+			streams:  23, words: 58929
+		worklib.uvm_pkg:sv <0x675ce3d9>
+			streams:  25, words: 43545
+		worklib.uvm_pkg:sv <0x4dc9689c>
+			streams:  23, words: 51847
+		worklib.uvm_pkg:sv <0x3a259993>
+			streams:  23, words: 55375
+		worklib.uvm_pkg:sv <0x55f687a5>
+			streams:  25, words: 36172
+		worklib.uvm_pkg:sv <0x0bc7f2b0>
+			streams:  23, words: 51918
+		worklib.uvm_pkg:sv <0x335dede2>
+			streams:  25, words: 76999
+		worklib.cdns_uvm_pkg:sv <0x0f9351c4>
+			streams:   9, words:  4557
+		worklib.cdns_uvm_pkg:sv <0x310ba69a>
+			streams:  10, words:  8686
+		worklib.uvm_pkg:sv <0x3d767409>
+			streams:  22, words: 22474
+		worklib.uvm_pkg:sv <0x4e2c3ae3>
+			streams:  21, words: 24700
+		worklib.uvm_pkg:sv <0x7bae21b4>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x659009c7>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x4a79e543>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x378c5192>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x440fcc3b>
+			streams:  23, words: 28090
+		worklib.uvm_pkg:sv <0x715b0822>
+			streams:  22, words: 38664
+		worklib.uvm_pkg:sv <0x7b583980>
+			streams:  27, words: 37569
+		worklib.uvm_pkg:sv <0x18a7e8d6>
+			streams:  26, words: 32843
+		worklib.uvm_pkg:sv <0x44cd9376>
+			streams:  22, words: 25316
+		worklib.uvm_pkg:sv <0x0b0595ff>
+			streams:  23, words: 21893
+		worklib.uvm_pkg:sv <0x2234a370>
+			streams:  23, words: 21893
+		worklib.uvm_pkg:sv <0x22147ef4>
+			streams:  22, words: 69092
+		worklib.uvm_pkg:sv <0x4f5d1189>
+			streams:  22, words: 25086
+		worklib.uvm_pkg:sv <0x7de871bb>
+			streams:  22, words: 26783
+		worklib.uvm_pkg:sv <0x0e592107>
+			streams:  22, words: 39446
+		worklib.uvm_pkg:sv <0x75f2aacf>
+			streams:  23, words: 44603
+		worklib.uvm_pkg:sv <0x5a2d1908>
+			streams:  23, words: 30571
+		worklib.sys_pkg:sv <0x5d744fd4>
+			streams:  22, words: 27233
+		worklib.uvm_pkg:sv <0x65cfa42c>
+			streams:   7, words:  3090
+		worklib.uvm_pkg:sv <0x1b5a9a87>
+			streams: 163, words: 270304
+		worklib.uvm_pkg:sv <0x156efd7b>
+			streams:   7, words:  2422
+		worklib.uvm_pkg:sv <0x4e1c9e69>
+			streams:  23, words: 28023
+		worklib.uvm_pkg:sv <0x4e6f49bb>
+			streams:  22, words: 22620
+		worklib.uvm_pkg:sv <0x5d569997>
+			streams:  22, words: 23710
+		worklib.uvm_pkg:sv <0x477bd27f>
+			streams:  17, words: 16144
+		worklib.uvm_pkg:sv <0x626c8030>
+			streams:  27, words: 45809
+		worklib.uvm_pkg:sv <0x71eaaaed>
+			streams:   7, words:  3090
+		worklib.hbus_pkg:sv <0x034aa4f2>
+			streams:  25, words: 32048
+		worklib.uvm_pkg:sv <0x1641b564>
+			streams:  23, words: 26617
+		worklib.uvm_pkg:sv <0x0d859def>
+			streams:  24, words: 25123
+		worklib.uvm_pkg:sv <0x33d02e55>
+			streams:  23, words: 24734
+		worklib.uvm_pkg:sv <0x1ad3825a>
+			streams:  23, words: 41117
+		worklib.uvm_pkg:sv <0x6f667706>
+			streams:  24, words: 32300
+		worklib.uvm_pkg:sv <0x1c7230e4>
+			streams:  23, words: 27609
+		worklib.uvm_pkg:sv <0x325b9c5b>
+			streams:  23, words: 27609
+		worklib.uvm_pkg:sv <0x3304d1ad>
+			streams:  23, words: 27609
+		worklib.uvm_pkg:sv <0x31bb1f1c>
+			streams:  23, words: 24236
+		worklib.uvm_pkg:sv <0x527b7dcc>
+			streams:  24, words: 29218
+		worklib.uvm_pkg:sv <0x0fc6f792>
+			streams:  23, words: 24397
+		worklib.uvm_pkg:sv <0x452e3dee>
+			streams:  24, words: 28364
+		worklib.hbus_types_pkg:sv <0x646f0037>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x283d4a36>
+			streams:  23, words: 24236
+		worklib.uvm_pkg:sv <0x2f950da6>
+			streams:  23, words: 24230
+		worklib.uvm_pkg:sv <0x09ec639c>
+			streams:  23, words: 24236
+		worklib.uvm_pkg:sv <0x4531dbf7>
+			streams:  23, words: 26219
+		worklib.uvm_pkg:sv <0x334cb783>
+			streams:  23, words: 26199
+		worklib.uvm_pkg:sv <0x6a43381f>
+			streams:  28, words: 21869
+		worklib.uvm_pkg:sv <0x58b22b3d>
+			streams: 150, words: 140931
+		worklib.uvm_pkg:sv <0x2de04092>
+			streams: 228, words: 337817
+		worklib.uvm_pkg:sv <0x57b270d5>
+			streams:  22, words: 22718
+		worklib.uvm_pkg:sv <0x475ffa06>
+			streams:  33, words: 91671
+		worklib.uvm_pkg:sv <0x6a0c5da8>
+			streams:  22, words: 22620
+		worklib.uvm_pkg:sv <0x340dda7f>
+			streams:  25, words: 34080
+		worklib.uvm_pkg:sv <0x427a8b93>
+			streams:  24, words: 47923
+		worklib.uvm_pkg:sv <0x5e58cbc8>
+			streams:  25, words: 36693
+		worklib.uvm_pkg:sv <0x444f7d3a>
+			streams:  23, words: 53943
+		worklib.uvm_pkg:sv <0x699937a3>
+			streams:  54, words: 78338
+		worklib.top:sv <0x3a1d75ce>
+			streams:  61, words: 87879
+		worklib.hbus_if:sv <0x54bc0301>
+			streams:   1, words:   383
+		worklib.sys_pkg:sv <0x1980045b>
+			streams:   0, words:     0
+		worklib.hbus_reg_pkg:sv <0x76f031ae>
+			streams:   0, words:     0
+		worklib.hbus_pkg:sv <0x52d291d0>
+			streams:   0, words:     0
+		worklib.cdns_uvm_pkg:sv <0x60502157>
+			streams: 218, words: 387738
+		worklib.cdns_uvmapi:svp <0x194b0dca>
+			streams:  27, words: 31625
+		worklib.cdns_assert2uvm_pkg:sv <0x018e7fe6>
+			streams:   3, words:  2242
+		worklib.uvm_pkg:sv <0x146e9547>
+			streams: 4685, words: 7714264
+		worklib.hbus_types_pkg:sv <0x7bc40db2>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       2       2
+		Interfaces:                    2       1
+		Verilog packages:              8       8
+		Registers:                 19054   12564
+		Scalar wires:                 20       -
+		Expanded wires:               32       4
+		Vectored wires:                2       -
+		Named events:                  4      12
+		Always blocks:                 9       9
+		Initial blocks:              457     206
+		Parallel blocks:              29      30
+		Cont. assignments:             6       5
+		Pseudo assignments:            2       2
+		Assertions:                    3       3
+		SV Class declarations:       274     389
+		SV Class specializations:    537     537
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/xcelium/files/xmsimrc
+xcelium> source /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (19.09-s006)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test hbus_burst_seq_test...
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_spell_chkr.svh(123) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean m_hbus_cfg|m_hbus_env_cfg
+-------------------------------------------------------------------------------
+Name                     Type             Size  Value                          
+-------------------------------------------------------------------------------
+hbus_reg_block_main_map  uvm_reg_map      -     @2889                          
+  endian                                  ...   UVM_LITTLE_ENDIAN              
+  effective sequencer    hbus_seqr        ...   uvm_test_top.env.agnt_main.seqr
+  ctrl_p0                ctrl_p0_reg      ...   @2693 +'h0                     
+  ctrl_p1                ctrl_p1_reg      ...   @2722 +'h1                     
+  ctrl_p2                ctrl_p2_reg      ...   @2749 +'h2                     
+  ctrl_p3                ctrl_p3_reg      ...   @2776 +'h3                     
+  ro                     ro_reg           ...   @2803 +'h6                     
+  status                 status_reg       ...   @2815 +'h4                     
+  id_register            id_register_reg  ...   @2839 +'h5                     
+  bitwise_and            bitwise_and_reg  ...   @2852 +'h7                     
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Name                          Type         Size  Value                               
+-------------------------------------------------------------------------------------
+hbus_reg_block_secondary_map  uvm_reg_map  -     @2899                               
+  endian                                   ...   UVM_LITTLE_ENDIAN                   
+  effective sequencer         hbus_seqr    ...   uvm_test_top.env.agnt_secondary.seqr
+  ctrl_p0                     ctrl_p0_reg  ...   @2693 +'h1                          
+  gp_one                      gp_one_reg   ...   @2864 +'h0                          
+  shadow                      shadow_reg   ...   @2876 +'h2                          
+-------------------------------------------------------------------------------------
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------------------------------------------------------
+Name                                Type                                Size  Value                               
+------------------------------------------------------------------------------------------------------------------
+uvm_test_top                        hbus_burst_seq_test                 -     @2106                               
+  env                               hbus_env                            -     @2196                               
+    agnt_main                       hbus_agnt                           -     @2332                               
+      drv                           hbus_drv                            -     @3149                               
+        rsp_port                    uvm_analysis_port                   -     @3251                               
+        seq_item_port               uvm_seq_item_pull_port              -     @3199                               
+      mntr                          hbus_mntr                           -     @2317                               
+        mon_ap                      uvm_analysis_port                   -     @3118                               
+      seqr                          hbus_seqr                           -     @3282                               
+        rsp_export                  uvm_analysis_export                 -     @3342                               
+        seq_item_export             uvm_seq_item_pull_imp               -     @3902                               
+        arbitration_queue           array                               0     -                                   
+        lock_queue                  array                               0     -                                   
+        num_last_reqs               integral                            32    'd1                                 
+        num_last_rsps               integral                            32    'd1                                 
+    agnt_secondary                  hbus_agnt                           -     @2327                               
+      drv                           hbus_drv                            -     @4052                               
+        rsp_port                    uvm_analysis_port                   -     @4148                               
+        seq_item_port               uvm_seq_item_pull_port              -     @4099                               
+      mntr                          hbus_mntr                           -     @3971                               
+        mon_ap                      uvm_analysis_port                   -     @4020                               
+      seqr                          hbus_seqr                           -     @4180                               
+        rsp_export                  uvm_analysis_export                 -     @4236                               
+        seq_item_export             uvm_seq_item_pull_imp               -     @4788                               
+        arbitration_queue           array                               0     -                                   
+        lock_queue                  array                               0     -                                   
+        num_last_reqs               integral                            32    'd1                                 
+        num_last_rsps               integral                            32    'd1                                 
+    hbus2reg_predictor              uvm_reg_predictor #(hbus_seq_item)  -     @2401                               
+      bus_in                        uvm_analysis_imp                    -     @2457                               
+      reg_ap                        uvm_analysis_port                   -     @2509                               
+    hbus2reg_predictor_s            uvm_reg_predictor #(hbus_seq_item)  -     @2543                               
+      bus_in                        uvm_analysis_imp                    -     @2592                               
+      reg_ap                        uvm_analysis_port                   -     @2641                               
+    hbus_rm                         hbus_reg_block                      -     @2622                               
+      ctrl_p0                       ctrl_p0_reg                         -     @2693                               
+        en_port                     uvm_reg_field                       ...    RW ctrl_p0[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RW ctrl_p0[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RW ctrl_p0[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RW ctrl_p0[7:5]=3'h0               
+      ctrl_p1                       ctrl_p1_reg                         -     @2722                               
+        en_port                     uvm_reg_field                       ...    RW ctrl_p1[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RW ctrl_p1[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RW ctrl_p1[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RW ctrl_p1[7:5]=3'h0               
+      ctrl_p2                       ctrl_p2_reg                         -     @2749                               
+        en_port                     uvm_reg_field                       ...    RW ctrl_p2[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RW ctrl_p2[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RW ctrl_p2[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RW ctrl_p2[7:5]=3'h0               
+      ctrl_p3                       ctrl_p3_reg                         -     @2776                               
+        en_port                     uvm_reg_field                       ...    RW ctrl_p3[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RW ctrl_p3[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RW ctrl_p3[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RW ctrl_p3[7:5]=3'h0               
+      ro                            ro_reg                              -     @2803                               
+        general                     uvm_reg_field                       ...    RO ro[7:0]=8'h00                   
+      status                        status_reg                          -     @2815                               
+        en_port_0                   uvm_reg_field                       ...    RO status[0:0]=1'h0                
+        en_port_1                   uvm_reg_field                       ...    RO status[1:1]=1'h0                
+        en_port_2                   uvm_reg_field                       ...    RO status[2:2]=1'h0                
+        en_port_3                   uvm_reg_field                       ...    RO status[3:3]=1'h0                
+      id_register                   id_register_reg                     -     @2839                               
+        F1                          id_register_field                   ...    RW id_register[7:0]=8'h00          
+      bitwise_and                   bitwise_and_reg                     -     @2852                               
+        result                      uvm_reg_field                       ...    RW bitwise_and[7:0]=8'h00          
+      gp_one                        gp_one_reg                          -     @2864                               
+        general                     uvm_reg_field                       ...    RW gp_one[7:0]=8'h00               
+      shadow                        shadow_reg                          -     @2876                               
+        shadow                      uvm_reg_field                       ...    RO shadow[7:0]=8'h00               
+      hbus_reg_block_main_map       uvm_reg_map                         -     @2889                               
+        endian                                                          ...   UVM_LITTLE_ENDIAN                   
+        effective sequencer         hbus_seqr                           ...   uvm_test_top.env.agnt_main.seqr     
+        ctrl_p0                     ctrl_p0_reg                         ...   @2693 +'h0                          
+        ctrl_p1                     ctrl_p1_reg                         ...   @2722 +'h1                          
+        ctrl_p2                     ctrl_p2_reg                         ...   @2749 +'h2                          
+        ctrl_p3                     ctrl_p3_reg                         ...   @2776 +'h3                          
+        ro                          ro_reg                              ...   @2803 +'h6                          
+        status                      status_reg                          ...   @2815 +'h4                          
+        id_register                 id_register_reg                     ...   @2839 +'h5                          
+        bitwise_and                 bitwise_and_reg                     ...   @2852 +'h7                          
+      hbus_reg_block_secondary_map  uvm_reg_map                         -     @2899                               
+        endian                                                          ...   UVM_LITTLE_ENDIAN                   
+        effective sequencer         hbus_seqr                           ...   uvm_test_top.env.agnt_secondary.seqr
+        ctrl_p0                     ctrl_p0_reg                         ...   @2693 +'h1                          
+        gp_one                      gp_one_reg                          ...   @2864 +'h0                          
+        shadow                      shadow_reg                          ...   @2876 +'h2                          
+------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/tests/hbus_burst_seq_test.svh(58) @ 0: uvm_test_top [uvm_test_top] Start run phase
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/uvm_tb/env/hbus_env.svh(128) @ 0: uvm_test_top.env [env] reset main registers
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 50: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 02
+ address 00
+ kind    UVM_WRITE
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 60: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 04
+ address 01
+ kind    UVM_WRITE
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 70: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 06
+ address 02
+ kind    UVM_WRITE
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 80: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 08
+ address 03
+ kind    UVM_WRITE
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_drv.svh(83) @ 85: uvm_test_top.env.agnt_main.drv [drv] rsp at trans end 
+ values for hbus seq item trans_h
+ data[0] 08
+ address 03
+ kind    UVM_WRITE
+ burst_size 1
+ source  drv_rsp
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 85: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data[0] 08
+ address 03
+ kind    UVM_WRITE
+ burst_size 1
+ source  drv_rsp
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 110: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 02
+ address 01
+ kind    UVM_READ
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 120: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 04
+ address 02
+ kind    UVM_READ
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 130: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 06
+ address 03
+ kind    UVM_READ
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 140: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data[0] 08
+ address 04
+ kind    UVM_READ
+ burst_size 1
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_drv.svh(83) @ 145: uvm_test_top.env.agnt_main.drv [drv] rsp at trans end 
+ values for hbus seq item trans_h
+ data[0] 08
+ address 04
+ kind    UVM_READ
+ burst_size 1
+ source  drv_rsp
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg_burst/work/..//socv/hbus/hbus_reg_adapter.svh(37) @ 145: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data[0] 08
+ address 04
+ kind    UVM_READ
+ burst_size 1
+ source  drv_rsp
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 165: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 165: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 165: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   20
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/CONFIGDB/SPELLCHK]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[drv]     2
+[env]     1
+[hbus2reg]    10
+[uvm_test_top]     1
+
+Simulation complete via $finish(1) at time 165 NS + 59
+/apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+TOOL:	xrun(64)	19.09-s006: Exiting on Apr 13, 2021 at 15:30:30 IDT  (total: 00:00:09)

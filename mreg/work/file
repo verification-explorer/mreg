@@ -1,0 +1,16 @@
++incdir+$MREG_HOME/design
++incdir+$MREG_HOME/socv/uvm_tb/register_model
++incdir+$MREG_HOME/socv/hbus
++incdir+$MREG_HOME/socv/uvm_tb
+
+$MREG_HOME/design/hbus_types_pkg.sv
+$MREG_HOME/socv/hbus/hbus_if.sv
+$MREG_HOME/design/hbus_rx.sv
+
+$MREG_HOME/socv/uvm_tb/register_model/hbus_reg_pkg.sv
+$MREG_HOME/socv/hbus/hbus_pkg.sv
+$MREG_HOME/socv/uvm_tb/sys_pkg.sv
+
+$MREG_HOME/socv/uvm_tb/tb/top.sv
+
+

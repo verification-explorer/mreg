@@ -1,0 +1,6 @@
+xrun \
+-clean \
+-access +rw \
+-uvmhome CDNS-1.2 \
+-f file \
+$*

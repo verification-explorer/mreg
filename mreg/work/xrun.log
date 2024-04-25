@@ -1,0 +1,5115 @@
+xrun(64): 19.09-s006: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.09-s006: Started on Jun 02, 2021 at 12:13:27 IDT
+xrun
+	-clean
+	-access +rw
+	-uvmhome CDNS-1.2
+	-f file
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//design
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/register_model
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus
+		+incdir+/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//design/hbus_types_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_if.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//design/hbus_rx.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/register_model/hbus_reg_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/sys_pkg.sv
+		/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/tb/top.sv
+	+UVM_TESTNAME=hbus_reg_bit_bash_test
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//design/hbus_types_pkg.sv
+	package worklib.hbus_types_pkg:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_if.sv
+	interface worklib.hbus_if:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//design/hbus_rx.sv
+	module worklib.hbus_rx:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/register_model/hbus_reg_pkg.sv
+	package worklib.hbus_reg_pkg:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_pkg.sv
+	package worklib.hbus_pkg:sv
+		errors: 0, warnings: 0
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/sys_pkg.sv
+        status.en_port[bit_to_change].predict(rw.value[0][0]);
+                                            |
+xmvlog: *W,FUNTSK (/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/env/status_reg_cb.svh,17|44): function called as a task without void'().
+        shadow.shadow.predict(rw.value[0][7:0]);
+                            |
+xmvlog: *W,FUNTSK (/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/env/shadow_reg_cb.svh,15|28): function called as a task without void'().
+        ctrl_p0.predict(8'hAA);
+                      |
+xmvlog: *W,FUNTSK (/home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/tests/hbus_reg_api_test.svh,112|22): function called as a task without void'().
+	package worklib.sys_pkg:sv
+		errors: 0, warnings: 3
+file: /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/tb/top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//design given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		hbus_types_pkg
+		hbus_reg_pkg
+		hbus_pkg
+		sys_pkg
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.hbus_rx:sv <0x5300aaf5>
+			streams:  32, words: 12507
+		worklib.uvm_pkg:sv <0x097a10c9>
+			streams:   6, words:  3451
+		worklib.uvm_pkg:sv <0x5a4edbb3>
+			streams:   6, words:  3111
+		worklib.uvm_pkg:sv <0x44098853>
+			streams:   5, words:  2521
+		worklib.uvm_pkg:sv <0x429c326f>
+			streams:  25, words: 18487
+		worklib.uvm_pkg:sv <0x28afc937>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x52205dd9>
+			streams:  21, words: 50394
+		worklib.uvm_pkg:sv <0x109a8c93>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x782a200d>
+			streams:   7, words:  3090
+		worklib.uvm_pkg:sv <0x75906378>
+			streams:  24, words: 20972
+		worklib.uvm_pkg:sv <0x64be22ba>
+			streams:  24, words: 20146
+		worklib.uvm_pkg:sv <0x179bf04c>
+			streams:  20, words: 19964
+		worklib.uvm_pkg:sv <0x3343f16b>
+			streams:  11, words:  4453
+		worklib.uvm_pkg:sv <0x3804bc18>
+			streams:  23, words: 31066
+		worklib.uvm_pkg:sv <0x267c6657>
+			streams:  12, words: 15548
+		worklib.uvm_pkg:sv <0x13d04d63>
+			streams:  23, words: 25382
+		worklib.uvm_pkg:sv <0x7a304b89>
+			streams:  22, words: 50402
+		worklib.uvm_pkg:sv <0x3ac9100e>
+			streams:  25, words: 38796
+		worklib.uvm_pkg:sv <0x39070c49>
+			streams:  23, words: 58929
+		worklib.uvm_pkg:sv <0x03ff0ac9>
+			streams:  25, words: 43545
+		worklib.uvm_pkg:sv <0x4cf1b0c7>
+			streams:  23, words: 51847
+		worklib.uvm_pkg:sv <0x02a41a62>
+			streams:  23, words: 55375
+		worklib.uvm_pkg:sv <0x3eb3bfd1>
+			streams:  25, words: 36172
+		worklib.uvm_pkg:sv <0x1cdd6b1d>
+			streams:  23, words: 51918
+		worklib.uvm_pkg:sv <0x3299af55>
+			streams:  25, words: 76999
+		worklib.cdns_uvm_pkg:sv <0x470d877b>
+			streams:   9, words:  4557
+		worklib.cdns_uvm_pkg:sv <0x3032db26>
+			streams:  10, words:  8686
+		worklib.uvm_pkg:sv <0x6292a4d6>
+			streams:  22, words: 22474
+		worklib.uvm_pkg:sv <0x7f263c38>
+			streams:  21, words: 24700
+		worklib.uvm_pkg:sv <0x34e15159>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x74223655>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x61b1ab76>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x2580640c>
+			streams:  23, words: 28186
+		worklib.uvm_pkg:sv <0x0baa47e8>
+			streams:  23, words: 28343
+		worklib.uvm_pkg:sv <0x715d0b12>
+			streams:  28, words: 21869
+		worklib.uvm_pkg:sv <0x22b11e55>
+			streams:  22, words: 38664
+		worklib.uvm_pkg:sv <0x5d8f6fc9>
+			streams:  27, words: 37569
+		worklib.uvm_pkg:sv <0x225f6263>
+			streams:  26, words: 32843
+		worklib.uvm_pkg:sv <0x26c603c9>
+			streams:  22, words: 25316
+		worklib.uvm_pkg:sv <0x6e7a267e>
+			streams:  23, words: 21893
+		worklib.uvm_pkg:sv <0x3763e6a9>
+			streams:  23, words: 21893
+		worklib.uvm_pkg:sv <0x185a7328>
+			streams:  22, words: 69092
+		worklib.uvm_pkg:sv <0x39c695bc>
+			streams:  22, words: 25086
+		worklib.uvm_pkg:sv <0x670b43a6>
+			streams:  22, words: 26783
+		worklib.uvm_pkg:sv <0x1ed2b77a>
+			streams:  22, words: 39446
+		worklib.uvm_pkg:sv <0x38d17366>
+			streams:  23, words: 44603
+		worklib.uvm_pkg:sv <0x3ade7aea>
+			streams:  25, words: 34080
+		worklib.uvm_pkg:sv <0x3d1a244e>
+			streams:  24, words: 47923
+		worklib.uvm_pkg:sv <0x260571af>
+			streams:  25, words: 36693
+		worklib.uvm_pkg:sv <0x20785554>
+			streams:  23, words: 53943
+		worklib.uvm_pkg:sv <0x1cc950c7>
+			streams:  54, words: 78338
+		worklib.uvm_pkg:sv <0x4e1fef7c>
+			streams:  22, words: 19815
+		worklib.sys_pkg:sv <0x18901cbb>
+			streams:  22, words: 27233
+		worklib.uvm_pkg:sv <0x6acd6f45>
+			streams:   7, words:  3090
+		worklib.uvm_pkg:sv <0x4dbedb88>
+			streams: 163, words: 269668
+		worklib.uvm_pkg:sv <0x7cd75510>
+			streams:   7, words:  2422
+		worklib.uvm_pkg:sv <0x43505513>
+			streams:  22, words: 22620
+		worklib.uvm_pkg:sv <0x2bec205a>
+			streams:  22, words: 23710
+		worklib.uvm_pkg:sv <0x11a959c4>
+			streams:  17, words: 16144
+		worklib.uvm_pkg:sv <0x552c8cf6>
+			streams:  24, words: 39988
+		worklib.uvm_pkg:sv <0x23d7b03e>
+			streams:   7, words:  3090
+		worklib.uvm_pkg:sv <0x245deb2c>
+			streams: 150, words: 140931
+		worklib.uvm_pkg:sv <0x2996ac4c>
+			streams: 227, words: 332064
+		worklib.uvm_pkg:sv <0x7d04f708>
+			streams:  22, words: 22718
+		worklib.uvm_pkg:sv <0x0b1864b3>
+			streams:  24, words: 30783
+		worklib.uvm_pkg:sv <0x0996b00b>
+			streams:  33, words: 59166
+		worklib.uvm_pkg:sv <0x5e397969>
+			streams:  23, words: 26617
+		worklib.uvm_pkg:sv <0x73e9dfdc>
+			streams:  24, words: 25123
+		worklib.uvm_pkg:sv <0x7f8b5445>
+			streams:  23, words: 24734
+		worklib.uvm_pkg:sv <0x0e403212>
+			streams:  23, words: 41117
+		worklib.uvm_pkg:sv <0x269175d3>
+			streams:  24, words: 32316
+		worklib.uvm_pkg:sv <0x7cd01b99>
+			streams:  23, words: 27609
+		worklib.uvm_pkg:sv <0x7793a17b>
+			streams:  23, words: 27609
+		worklib.uvm_pkg:sv <0x7d473fdc>
+			streams:  23, words: 27609
+		worklib.uvm_pkg:sv <0x34f3382c>
+			streams:  23, words: 24236
+		worklib.uvm_pkg:sv <0x5cd15cdd>
+			streams:  24, words: 29218
+		worklib.uvm_pkg:sv <0x06b8c918>
+			streams:  23, words: 24397
+		worklib.uvm_pkg:sv <0x1ffd50a5>
+			streams:  24, words: 28364
+		worklib.hbus_types_pkg:sv <0x646f0037>
+			streams:   7, words:  1918
+		worklib.uvm_pkg:sv <0x5ba0d4e1>
+			streams:  23, words: 24236
+		worklib.uvm_pkg:sv <0x31d37d4f>
+			streams:  23, words: 24230
+		worklib.uvm_pkg:sv <0x13f70fc1>
+			streams:  23, words: 24236
+		worklib.top:sv <0x0089632f>
+			streams:  61, words: 87879
+		worklib.hbus_if:sv <0x54bc0301>
+			streams:   1, words:   383
+		worklib.sys_pkg:sv <0x4c1e6afb>
+			streams:   0, words:     0
+		worklib.hbus_reg_pkg:sv <0x406ce86a>
+			streams:   0, words:     0
+		worklib.hbus_pkg:sv <0x43e61b99>
+			streams:   0, words:     0
+		worklib.cdns_uvm_pkg:sv <0x37c09566>
+			streams: 218, words: 387738
+		worklib.cdns_uvmapi:svp <0x7dc3447c>
+			streams:  27, words: 31625
+		worklib.cdns_assert2uvm_pkg:sv <0x04d6dab1>
+			streams:   3, words:  2242
+		worklib.uvm_pkg:sv <0x74782cf9>
+			streams: 4680, words: 7705279
+		worklib.hbus_types_pkg:sv <0x7bc40db2>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       2       2
+		Interfaces:                    2       1
+		Verilog packages:              8       8
+		Registers:                 18823   12445
+		Scalar wires:                 20       -
+		Expanded wires:               32       4
+		Vectored wires:                2       -
+		Named events:                  4      12
+		Always blocks:                 9       9
+		Initial blocks:              445     202
+		Parallel blocks:              28      29
+		Cont. assignments:             6       5
+		Pseudo assignments:            2       2
+		Assertions:                    3       3
+		SV Class declarations:       270     385
+		SV Class specializations:    529     529
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/xcelium/files/xmsimrc
+xcelium> source /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (19.09-s006)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test hbus_reg_bit_bash_test...
+-------------------------------------------------------------------------------
+Name                     Type             Size  Value                          
+-------------------------------------------------------------------------------
+hbus_reg_block_main_map  uvm_reg_map      -     @2820                          
+  endian                                  ...   UVM_LITTLE_ENDIAN              
+  effective sequencer    hbus_seqr        ...   uvm_test_top.env.agnt_main.seqr
+  ctrl_p0                ctrl_p0_reg      ...   @2606 +'h0                     
+  ctrl_p1                ctrl_p1_reg      ...   @2644 +'h1                     
+  ctrl_p2                ctrl_p2_reg      ...   @2680 +'h2                     
+  ctrl_p3                ctrl_p3_reg      ...   @2707 +'h3                     
+  ro                     ro_reg           ...   @2734 +'h6                     
+  status                 status_reg       ...   @2746 +'h4                     
+  id_register            id_register_reg  ...   @2770 +'h5                     
+  bitwise_and            bitwise_and_reg  ...   @2783 +'h7                     
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Name                          Type         Size  Value                               
+-------------------------------------------------------------------------------------
+hbus_reg_block_secondary_map  uvm_reg_map  -     @2830                               
+  endian                                   ...   UVM_LITTLE_ENDIAN                   
+  effective sequencer         hbus_seqr    ...   uvm_test_top.env.agnt_secondary.seqr
+  ctrl_p0                     ctrl_p0_reg  ...   @2606 +'h1                          
+  gp_one                      gp_one_reg   ...   @2795 +'h0                          
+  shadow                      shadow_reg   ...   @2807 +'h2                          
+-------------------------------------------------------------------------------------
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------------------------------------------------------
+Name                                Type                                Size  Value                               
+------------------------------------------------------------------------------------------------------------------
+uvm_test_top                        hbus_reg_bit_bash_test              -     @2086                               
+  env                               hbus_env                            -     @2176                               
+    agnt_main                       hbus_agnt                           -     @2251                               
+      drv                           hbus_drv                            -     @3080                               
+        rsp_port                    uvm_analysis_port                   -     @3182                               
+        seq_item_port               uvm_seq_item_pull_port              -     @3130                               
+      mntr                          hbus_mntr                           -     @2595                               
+        mon_ap                      uvm_analysis_port                   -     @3049                               
+      seqr                          hbus_seqr                           -     @3213                               
+        rsp_export                  uvm_analysis_export                 -     @3273                               
+        seq_item_export             uvm_seq_item_pull_imp               -     @3833                               
+        arbitration_queue           array                               0     -                                   
+        lock_queue                  array                               0     -                                   
+        num_last_reqs               integral                            32    'd1                                 
+        num_last_rsps               integral                            32    'd1                                 
+    agnt_secondary                  hbus_agnt                           -     @2246                               
+      drv                           hbus_drv                            -     @3981                               
+        rsp_port                    uvm_analysis_port                   -     @4077                               
+        seq_item_port               uvm_seq_item_pull_port              -     @4028                               
+      mntr                          hbus_mntr                           -     @3900                               
+        mon_ap                      uvm_analysis_port                   -     @3949                               
+      seqr                          hbus_seqr                           -     @4109                               
+        rsp_export                  uvm_analysis_export                 -     @4165                               
+        seq_item_export             uvm_seq_item_pull_imp               -     @4717                               
+        arbitration_queue           array                               0     -                                   
+        lock_queue                  array                               0     -                                   
+        num_last_reqs               integral                            32    'd1                                 
+        num_last_rsps               integral                            32    'd1                                 
+    hbus2reg_predictor              uvm_reg_predictor #(hbus_seq_item)  -     @2320                               
+      bus_in                        uvm_analysis_imp                    -     @2376                               
+      reg_ap                        uvm_analysis_port                   -     @2428                               
+    hbus2reg_predictor_s            uvm_reg_predictor #(hbus_seq_item)  -     @2462                               
+      bus_in                        uvm_analysis_imp                    -     @2511                               
+      reg_ap                        uvm_analysis_port                   -     @2560                               
+    hbus_rm                         hbus_reg_block                      -     @2541                               
+      ctrl_p0                       ctrl_p0_reg                         -     @2606                               
+        en_port                     uvm_reg_field                       ...    RO ctrl_p0[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RO ctrl_p0[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RO ctrl_p0[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RO ctrl_p0[7:5]=3'h0               
+      ctrl_p1                       ctrl_p1_reg                         -     @2644                               
+        en_port                     uvm_reg_field                       ...    RW ctrl_p1[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RW ctrl_p1[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RW ctrl_p1[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RW ctrl_p1[7:5]=3'h0               
+      ctrl_p2                       ctrl_p2_reg                         -     @2680                               
+        en_port                     uvm_reg_field                       ...    RW ctrl_p2[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RW ctrl_p2[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RW ctrl_p2[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RW ctrl_p2[7:5]=3'h0               
+      ctrl_p3                       ctrl_p3_reg                         -     @2707                               
+        en_port                     uvm_reg_field                       ...    RW ctrl_p3[0:0]=1'h0               
+        climit                      uvm_reg_field                       ...    RW ctrl_p3[2:1]=2'h0               
+        vlimit                      uvm_reg_field                       ...    RW ctrl_p3[4:3]=2'h0               
+        unused                      uvm_reg_field                       ...    RW ctrl_p3[7:5]=3'h0               
+      ro                            ro_reg                              -     @2734                               
+        general                     uvm_reg_field                       ...    RO ro[7:0]=8'h00                   
+      status                        status_reg                          -     @2746                               
+        en_port_0                   uvm_reg_field                       ...    RO status[0:0]=1'h0                
+        en_port_1                   uvm_reg_field                       ...    RO status[1:1]=1'h0                
+        en_port_2                   uvm_reg_field                       ...    RO status[2:2]=1'h0                
+        en_port_3                   uvm_reg_field                       ...    RO status[3:3]=1'h0                
+      id_register                   id_register_reg                     -     @2770                               
+        F1                          id_register_field                   ...    RW id_register[7:0]=8'h00          
+      bitwise_and                   bitwise_and_reg                     -     @2783                               
+        result                      uvm_reg_field                       ...    RW bitwise_and[7:0]=8'h00          
+      gp_one                        gp_one_reg                          -     @2795                               
+        general                     uvm_reg_field                       ...    RW gp_one[7:0]=8'h00               
+      shadow                        shadow_reg                          -     @2807                               
+        shadow                      uvm_reg_field                       ...    RO shadow[7:0]=8'h00               
+      hbus_reg_block_main_map       uvm_reg_map                         -     @2820                               
+        endian                                                          ...   UVM_LITTLE_ENDIAN                   
+        effective sequencer         hbus_seqr                           ...   uvm_test_top.env.agnt_main.seqr     
+        ctrl_p0                     ctrl_p0_reg                         ...   @2606 +'h0                          
+        ctrl_p1                     ctrl_p1_reg                         ...   @2644 +'h1                          
+        ctrl_p2                     ctrl_p2_reg                         ...   @2680 +'h2                          
+        ctrl_p3                     ctrl_p3_reg                         ...   @2707 +'h3                          
+        ro                          ro_reg                              ...   @2734 +'h6                          
+        status                      status_reg                          ...   @2746 +'h4                          
+        id_register                 id_register_reg                     ...   @2770 +'h5                          
+        bitwise_and                 bitwise_and_reg                     ...   @2783 +'h7                          
+      hbus_reg_block_secondary_map  uvm_reg_map                         -     @2830                               
+        endian                                                          ...   UVM_LITTLE_ENDIAN                   
+        effective sequencer         hbus_seqr                           ...   uvm_test_top.env.agnt_secondary.seqr
+        ctrl_p0                     ctrl_p0_reg                         ...   @2606 +'h1                          
+        gp_one                      gp_one_reg                          ...   @2795 +'h0                          
+        shadow                      shadow_reg                          ...   @2807 +'h2                          
+------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/tests/hbus_reg_bit_bash_test.svh(34) @ 0: uvm_test_top [uvm_test_top] Start run phase
+UVM_INFO @ 0: reporter@@bit_bash_seq [STARTING_SEQ] 
+
+Starting bit_bash_seq sequence...
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 0: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.ctrl_p0 in map "hbus_rm.hbus_reg_block_main_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/uvm_tb/env/hbus_env.svh(126) @ 0: uvm_test_top.env [env] reset main registers
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 55: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    01
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 60: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    01
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 85: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    01
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 90: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    01
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 90: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #0 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000001 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 105: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 110: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 135: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 140: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 140: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #0 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000001 yielded 'h0000000000000000 instead of 'h0000000000000001
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 155: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    02
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 160: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    02
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 185: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    02
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 190: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    02
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 190: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #1 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000002 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 205: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 210: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 235: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 240: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 240: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #1 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000002 yielded 'h0000000000000000 instead of 'h0000000000000002
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 255: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    04
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 260: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    04
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 285: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    04
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 290: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    04
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 290: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #2 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000004 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 305: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 310: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 335: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 340: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 340: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #2 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000004 yielded 'h0000000000000000 instead of 'h0000000000000004
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 355: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    08
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 360: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    08
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 385: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    08
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 390: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    08
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 390: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #3 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000008 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 405: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 410: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 435: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 440: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 440: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #3 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000008 yielded 'h0000000000000000 instead of 'h0000000000000008
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 455: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    10
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 460: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    10
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 485: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    10
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 490: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    10
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 490: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #4 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000010 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 505: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 510: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 535: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 540: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 540: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #4 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000010 yielded 'h0000000000000000 instead of 'h0000000000000010
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 555: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    20
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 560: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    20
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 585: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    20
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 590: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    20
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 590: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #5 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000020 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 605: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 610: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 635: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 640: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 640: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #5 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000020 yielded 'h0000000000000000 instead of 'h0000000000000020
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 655: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    40
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 660: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    40
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 685: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    40
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 690: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    40
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 690: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #6 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000040 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 705: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 710: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 735: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 740: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 740: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #6 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000040 yielded 'h0000000000000000 instead of 'h0000000000000040
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 755: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    80
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 760: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    80
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 785: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    80
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 790: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    80
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 790: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #7 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000080 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 805: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 810: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 835: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 840: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 840: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #7 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000080 yielded 'h0000000000000000 instead of 'h0000000000000080
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 840: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.ctrl_p0 in map "hbus_rm.hbus_reg_block_secondary_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 855: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    01
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 860: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    01
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 885: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    01
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 890: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    01
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 890: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #0 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000001 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 905: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 910: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 935: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 940: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 940: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #0 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000001 yielded 'h0000000000000000 instead of 'h0000000000000001
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 955: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    02
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 960: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    02
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 985: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    02
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 990: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    02
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 990: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #1 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000002 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1005: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1010: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1035: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1040: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1040: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #1 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000002 yielded 'h0000000000000000 instead of 'h0000000000000002
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1055: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    04
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1060: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    04
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1085: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    04
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1090: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    04
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1090: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #2 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000004 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1105: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1110: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1135: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1140: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1140: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #2 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000004 yielded 'h0000000000000000 instead of 'h0000000000000004
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1155: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    08
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1160: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    08
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1185: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    08
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1190: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    08
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1190: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #3 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000008 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1205: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1210: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1235: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1240: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1240: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #3 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000008 yielded 'h0000000000000000 instead of 'h0000000000000008
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1255: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    10
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1260: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    10
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1285: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    10
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1290: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    10
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1290: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #4 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000010 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1305: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1310: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1335: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1340: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1340: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #4 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000010 yielded 'h0000000000000000 instead of 'h0000000000000010
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1355: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    20
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1360: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    20
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1385: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    20
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1390: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    20
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1390: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #5 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000020 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1405: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1410: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1435: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1440: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1440: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #5 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000020 yielded 'h0000000000000000 instead of 'h0000000000000020
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1455: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    40
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1460: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    40
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1485: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    40
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1490: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    40
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1490: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #6 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000040 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1505: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1510: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1535: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1540: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1540: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #6 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000040 yielded 'h0000000000000000 instead of 'h0000000000000040
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1555: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    80
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1560: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    80
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1585: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    80
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1590: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    80
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1590: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 1 in bit #7 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000000 yielded 'h0000000000000080 instead of 'h0000000000000000
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1605: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1610: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1635: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1640: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_ERROR /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(177) @ 1640: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Writing a 0 in bit #7 of register "hbus_rm.ctrl_p0" with initial value 'h0000000000000080 yielded 'h0000000000000000 instead of 'h0000000000000080
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 1640: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.ctrl_p1 in map "hbus_rm.hbus_reg_block_main_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1655: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1660: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1685: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1690: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1705: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1710: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1735: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1740: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1755: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1760: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1785: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1790: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1805: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1810: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1835: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1840: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1855: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1860: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1885: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1890: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1905: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1910: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1935: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1940: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1955: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    17
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1960: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1985: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    17
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 1990: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2005: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2010: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2035: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2040: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2055: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2060: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2085: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2090: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2105: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2110: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2135: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2140: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2155: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2160: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2185: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2190: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2205: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2210: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2235: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2240: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2255: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2260: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2285: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2290: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2305: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2310: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2335: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2340: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2355: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2360: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2385: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2390: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2405: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2410: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2435: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2440: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 01
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 2440: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.ctrl_p2 in map "hbus_rm.hbus_reg_block_main_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2455: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2460: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2485: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2490: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2505: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2510: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2535: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2540: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2555: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2560: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2585: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2590: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2605: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2610: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2635: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2640: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2655: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2660: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2685: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2690: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2705: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2710: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2735: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2740: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2755: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    17
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2760: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2785: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    17
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2790: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2805: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2810: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2835: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2840: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2855: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2860: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2885: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2890: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2905: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2910: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2935: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2940: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2955: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2960: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2985: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 2990: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3005: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3010: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3035: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3040: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3055: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3060: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3085: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3090: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3105: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3110: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3135: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3140: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3155: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3160: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3185: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3190: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3205: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3210: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3235: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3240: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 3240: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.ctrl_p3 in map "hbus_rm.hbus_reg_block_main_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3255: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3260: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3285: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3290: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3305: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3310: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3335: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3340: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3355: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3360: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3385: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3390: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3405: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3410: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3435: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3440: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3455: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3460: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3485: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3490: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3505: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3510: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3535: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3540: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3555: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    17
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3560: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3585: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    17
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3590: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3605: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3610: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3635: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3640: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3655: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3660: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3685: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3690: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3705: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3710: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3735: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3740: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3755: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3760: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3785: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3790: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3805: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3810: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3835: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3840: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3855: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3860: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3885: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3890: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3905: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3910: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3935: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3940: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3955: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3960: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3985: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 3990: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4005: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4010: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4035: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4040: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 03
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 4040: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.ro in map "hbus_rm.hbus_reg_block_main_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4055: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ab
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4060: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ab
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4085: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4090: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4105: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ab
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4110: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ab
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4135: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4140: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4155: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    a8
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4160: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    a8
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4185: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4190: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4205: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    a8
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4210: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    a8
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4235: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4240: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4255: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ae
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4260: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ae
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4285: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4290: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4305: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ae
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4310: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ae
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4335: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4340: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4355: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    a2
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4360: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    a2
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4385: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4390: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4405: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    a2
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4410: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    a2
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4435: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4440: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4455: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ba
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4460: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ba
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4485: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4490: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4505: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ba
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4510: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ba
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4535: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4540: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4555: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    8a
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4560: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    8a
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4585: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4590: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4605: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    8a
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4610: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    8a
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4635: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4640: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4655: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ea
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4660: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ea
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4685: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4690: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4705: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    ea
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4710: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    ea
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4735: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4740: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4755: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    2a
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4760: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    2a
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4785: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4790: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4805: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    2a
+ address 06
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4810: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    2a
+ address 06
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4835: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4840: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    aa
+ address 06
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 4840: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.status in map "hbus_rm.hbus_reg_block_main_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4855: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4860: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4885: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4890: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4905: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4910: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4935: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4940: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4955: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0c
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4960: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0c
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4985: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 4990: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5005: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0c
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5010: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0c
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5035: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5040: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5055: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0a
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5060: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0a
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5085: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5090: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5105: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0a
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5110: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0a
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5135: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5140: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5155: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    06
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5160: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    06
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5185: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5190: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5205: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    06
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5210: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    06
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5235: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5240: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5255: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5260: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5285: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5290: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5305: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5310: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5335: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5340: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5355: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5360: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5385: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5390: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5405: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5410: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5435: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5440: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5455: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5460: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5485: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5490: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5505: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5510: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5535: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5540: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5555: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5560: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5585: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5590: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5605: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5610: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5635: reporter [hbus2reg] 
+
+ values for hbus seq item monitem
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5640: reporter [hbus2reg] 
+
+ values for hbus seq item trans_h
+ data    0e
+ address 04
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 5640: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.gp_one in map "hbus_rm.hbus_reg_block_secondary_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5655: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    01
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5660: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    01
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5685: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    01
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5690: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    01
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5705: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5710: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5735: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5740: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5755: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    02
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5760: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    02
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5785: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    02
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5790: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    02
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5805: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5810: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5835: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5840: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5855: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    04
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5860: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    04
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5885: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    04
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5890: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    04
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5905: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5910: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5935: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5940: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5955: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    08
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5960: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    08
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5985: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    08
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 5990: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    08
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6005: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6010: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6035: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6040: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6055: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    10
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6060: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    10
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6085: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    10
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6090: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    10
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6105: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6110: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6135: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6140: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6155: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    20
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6160: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    20
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6185: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    20
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6190: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    20
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6205: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6210: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6235: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6240: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6255: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    40
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6260: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    40
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6285: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    40
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6290: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    40
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6305: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6310: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6335: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6340: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6355: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    80
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6360: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    80
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6385: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    80
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6390: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    80
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6405: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6410: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6435: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    00
+ address 00
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6440: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    00
+ address 00
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/reg/sequences/uvm_reg_bit_bash_seq.svh(129) @ 6440: reporter@@bit_bash_seq.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register hbus_rm.shadow in map "hbus_rm.hbus_reg_block_secondary_map"...
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6455: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6460: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6485: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6490: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6505: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1e
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6510: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1e
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6535: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6540: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6555: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6560: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6585: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6590: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6605: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1d
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6610: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1d
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6635: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6640: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6655: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6660: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6685: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6690: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6705: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1b
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6710: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1b
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6735: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6740: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6755: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    17
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6760: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6785: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6790: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6805: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    17
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6810: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    17
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6835: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6840: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6855: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6860: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6885: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6890: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6905: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    0f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6910: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    0f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6935: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6940: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6955: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6960: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6985: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 6990: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7005: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    3f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7010: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    3f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7035: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7040: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7055: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7060: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7085: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7090: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7105: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    5f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7110: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    5f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7135: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7140: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7155: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7160: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7185: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7190: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7205: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    9f
+ address 02
+ kind    UVM_WRITE
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7210: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    9f
+ address 02
+ kind    UVM_WRITE
+ source  drv_req
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7235: reporter [hbus2reg_s] 
+
+ values for hbus seq item monitem
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  mntr
+
+UVM_INFO /home/shimonc/sv_proj/sv_uvm_tutor/uvm_tutor/15.ral/mreg/work/..//socv/hbus/hbus_reg_adapter.svh(36) @ 7240: reporter [hbus2reg_s] 
+
+ values for hbus seq item trans_h
+ data    1f
+ address 02
+ kind    UVM_READ
+ source  drv_req
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 7245: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 7245: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 7245: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  593
+UVM_WARNING :    0
+UVM_ERROR :   32
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[STARTING_SEQ]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[env]     1
+[hbus2reg]   384
+[hbus2reg_s]   192
+[uvm_reg_bit_bash_seq]    41
+[uvm_test_top]     1
+
+Simulation complete via $finish(1) at time 7245 NS + 59
+/apps/Infrasys/apps/xcelium/19.09.006/linuxamd/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+TOOL:	xrun(64)	19.09-s006: Exiting on Jun 02, 2021 at 12:13:35 IDT  (total: 00:00:08)

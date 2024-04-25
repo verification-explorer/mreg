@@ -1,0 +1,1 @@
+s1(02Jun2021:12:13:27):  xrun -clean -access +rw -uvmhome CDNS-1.2 -f file +UVM_TESTNAME=hbus_reg_bit_bash_test 

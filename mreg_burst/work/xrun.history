@@ -1,0 +1,1 @@
+s1(13Apr2021:15:30:22):  xrun -clean -access +rw -uvmhome CDNS-1.2 -f file +UVM_VERBOSITY=UVM_MEDIUM +UVM_TESTNAME=hbus_burst_seq_test 
