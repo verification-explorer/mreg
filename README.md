@@ -15,3 +15,7 @@ The topics covered in the course include
 12. Hooks and callbacks ID register example
 13. Multiple maps
 14. Burst
+
+Enjoy!
+
+[Recorded Course](https://www.youtube.com/watch?v=XGD6aw7Aaqw&list=PLCbVpn1DFl1EZYf14aqye7P9TBypHcmcT)
